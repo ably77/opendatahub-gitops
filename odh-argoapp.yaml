@@ -13,7 +13,7 @@ spec:
     path: .
   destination:
     server: https://kubernetes.default.svc
-    namespace: openshift-operators
+    namespace: odh
   syncPolicy:
     automated:
       prune: true # Specifies if resources should be pruned during auto-syncing ( false by default ).
