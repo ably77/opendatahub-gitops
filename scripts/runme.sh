@@ -9,7 +9,7 @@ until oc apply -k https://github.com/ably77/openshift-testbed-apps/kustomize/ins
 
 ### deploy odh operator in argocd
 echo deploying opendatahub operator
-oc apply -f https://raw.githubusercontent.com/ably77/openshift-testbed-apps/master/argo-apps/operators/opendatahub-operator.yaml
+oc apply -f https://raw.githubusercontent.com/ably77/opendatahub-gitops/main/odh-argoapp.yaml
 
 ### check kafka deployment status
 #echo waiting for kafka deployment to complete
