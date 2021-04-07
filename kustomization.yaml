@@ -9,5 +9,6 @@ bases:
 
 resources:
 - odh-namespace.yaml
+- kubeflow-namespace.yaml
 - cr/kfctl_openshift.v1.2.0.yaml
 - cr/kfdef-cr.yaml
