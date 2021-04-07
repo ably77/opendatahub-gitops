@@ -6,7 +6,7 @@ commonAnnotations:
 
 bases:
 - github.com/ably77/openshift-testbed-apps/kustomize/manifests/app/operators/opendatahub-operator/base/
-- github.com/ably77/openshift-testbed-apps/kustomize/manifests/app/operators/opendatahub-operator/base/cr/
+#- github.com/ably77/openshift-testbed-apps/kustomize/manifests/app/operators/opendatahub-operator/base/cr/
 
 resources:
 - odh-namespace.yaml
