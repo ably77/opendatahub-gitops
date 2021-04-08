@@ -7,13 +7,13 @@ This repo will do the following:
 - Deploy standard kubeflow Instance in namespace `kubeflow`
 
 
-### Running the Demo using kustomize
+### Running the Demo using kustomize (manual)
 
 Once logged in to an OpenShift cluster as a user with `cluster:admin` privileges, simply apply
 ```
 oc apply -k .
 ```
-This will deploy the demo without gitops. Doing so will cover a day 0 deployment. Managing upgrades and adding new `kfdef` modules is a manual procedure. Uninstalling will also be a manual procedure.
+This will deploy the demo without gitops. Doing so will cover a day 0 deployment. Managing upgrades and adding new `kfdef` modules is a manual procedure. Uninstalling will also be a manual procedure. If possible, I would recommend the approach below instead!
 
 ### Running the Demo using ArgoCD GitOps methodology
 
