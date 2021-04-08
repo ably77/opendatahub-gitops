@@ -13,7 +13,7 @@ Once logged in to an OpenShift cluster as a user with `cluster:admin` privileges
 ```
 oc apply -k .
 ```
-This will deploy the demo without gitops. Doing so will cover a day 0 deployment. Managing upgrades and adding new `kfdef` modules is a manual procedure.
+This will deploy the demo without gitops. Doing so will cover a day 0 deployment. Managing upgrades and adding new `kfdef` modules is a manual procedure. Uninstalling will also be a manual procedure.
 
 ### Running the Demo using ArgoCD GitOps methodology
 
@@ -21,8 +21,7 @@ Once logged in to an OpenShift cluster as a user with `cluster:admin` privileges
 ```
 ./scripts/runme.sh
 ```
-
-This script will bootstrap ArgoCD and deploy Open Data Hub as an ArgoCD Application. Doing so will allow more flexibility in your deployment when managing Day 2 lifecycle management activities such as adding new `kfdef` modules and upgrading the deployment as configuration in git.
+This script will bootstrap ArgoCD and deploy Open Data Hub as an ArgoCD Application. Doing so will introduce more automation in your deployment when managing Day 2 lifecycle management activities such as adding new `kfdef` modules, upgrading, and uninstalling the deployment using gitops.
 
 ## Navigating to Dashboards
 
