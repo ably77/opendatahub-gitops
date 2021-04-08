@@ -1,4 +1,4 @@
-# Open Data Hub on OpenShift Demo w/ GitOps
+# Open Data Hub on OpenShift Demo w/ GitOps using ArgoCD
 
 This repo will do the following:
 - Deploy the latest Open Data Hub Community Operator
@@ -6,12 +6,23 @@ This repo will do the following:
 - Deploy the Open Data Hub Instances in namespace `odh`
 - Deploy standard kubeflow Instance in namespace `kubeflow`
 
-### Running the Demo
 
-Once logged in to an OpenShift cluster as a user with `cluster:admin` privileges, simply run the command below:
+### Running the Demo using kustomize
+
+Once logged in to an OpenShift cluster as a user with `cluster:admin` privileges, simply apply
+```
+oc apply -k .
+```
+This will deploy the demo without gitops. Doing so will cover a day 0 deployment. Managing upgrades and adding new `kfdef` modules is a manual procedure.
+
+### Running the Demo using ArgoCD GitOps methodology
+
+Once logged in to an OpenShift cluster as a user with `cluster:admin` privileges, run the script below:
 ```
 ./scripts/runme.sh
 ```
+
+This script will bootstrap ArgoCD and deploy Open Data Hub as an ArgoCD Application. Doing so will allow more flexibility in your deployment when managing Day 2 lifecycle management activities such as adding new `kfdef` modules and upgrading the deployment as configuration in git.
 
 ## Navigating to Dashboards
 
