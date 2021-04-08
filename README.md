@@ -23,9 +23,11 @@ Once logged in to an OpenShift cluster as a user with `cluster:admin` privileges
 ```
 This script will bootstrap ArgoCD and deploy Open Data Hub as an ArgoCD Application. Using GitOps methodology will introduce more automation in your deployment when managing Day 2 lifecycle management activities such as adding new `kfdef` modules, upgrading, and uninstalling the deployment.
 
+#### Where is the App Configuration?
 The ArgoCD Application points to a kustomize repo libary of apps that can be found here:
 (https://github.com/ably77/openshift-testbed-apps)
 
+For now you can just leverage the default configurations set in this repo, but in the future you may look into forking this app library and changing the ArgoApp URI pointer so that you can assume full control using Git
 
 ## Navigating to Dashboards
 
