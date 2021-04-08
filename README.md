@@ -27,7 +27,26 @@ This script will bootstrap ArgoCD and deploy Open Data Hub as an ArgoCD Applicat
 The ArgoCD Application points to a kustomize repo libary of apps that can be found here:
 (https://github.com/ably77/openshift-testbed-apps)
 
-For now you can just leverage the default configurations set in this repo, but in the future you may look into forking this app library and changing the ArgoApp URI pointer so that you can assume full control using Git
+For now you can just leverage the default configurations set in this repo, but in the future you may look into forking this app library and changing github user in the `kustomize.yaml` to yours so that you can assume full control using Git
+
+Example:
+```
+% cat kustomization.yaml 
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+
+commonAnnotations:
+    argocd.argoproj.io/sync-options: SkipDryRunOnMissingResource=true
+
+bases:
+- github.com/<CHANGE_TO_GITHUB_USERNAME>/openshift-testbed-apps/kustomize/manifests/app/operators/opendatahub-operator/base/
+
+resources:
+- namespaces/odh-namespace.yaml
+- namespaces/kubeflow-namespace.yaml
+- cr/kfctl_openshift.v1.2.0.yaml
+- cr/kfdef-cr.yaml                                           
+```
 
 ## Navigating to Dashboards
 
