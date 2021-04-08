@@ -1,4 +1,4 @@
-# Open Data Hub Demo w/ GitOps
+# Open Data Hub on OpenShift Demo w/ GitOps
 
 This repo will do the following:
 - Deploy the latest Open Data Hub Community Operator
@@ -8,7 +8,7 @@ This repo will do the following:
 
 ### Running the Demo
 
-Once logged in as a user with `cluster:admin` privileges, simply run the command below:
+Once logged in to an OpenShift cluster as a user with `cluster:admin` privileges, simply run the command below:
 ```
 ./scripts/runme.sh
 ```

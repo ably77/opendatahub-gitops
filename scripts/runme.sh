@@ -13,10 +13,8 @@ until oc apply -k https://github.com/${GITHUB_USERNAME}/openshift-testbed-apps/k
 echo deploying opendatahub operator
 oc apply -f https://raw.githubusercontent.com/${GITHUB_USERNAME}/opendatahub-gitops/main/odh-argoapp.yaml
 
-### check kafka deployment status
-#echo waiting for kafka deployment to complete
-#./scripts/waitfor-pod -t 20 my-cluster-kafka-2
-
 ### end
 echo
-echo installation complete
+echo "installation complete"
+echo "watch pods in odh and kubeflow namespaces"
+echo "follow instructions in README.md to navigate dashboards"
