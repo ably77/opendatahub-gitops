@@ -42,4 +42,11 @@ Since kubeflow runs on istio service mesh, In the UI using the `istio-system` pr
 
 ![](https://github.com/ably77/opendatahub-gitops/blob/main/resources/kf2.png)
 
+### Uninstalling this Demo
+If using the ArgoCD install methodology, simply run the uninstall script below and ArgoCD will handle graceful termination of all the components in this demo
+```
+./scripts/uninstall.sh
+```
+
+
 
