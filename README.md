@@ -17,15 +17,15 @@ Once logged in as a user with `cluster:admin` privileges, simply run the command
 
 ### For ODH dashboard
 From the OpenShift UI in the project `odh`, navigate to Networking --> Routes and select the odh-dashboard route URL
-![](https://github.com/ably77/opendatahub-gitops/blob/master/resources/odh1.png)
+![](https://github.com/ably77/opendatahub-gitops/blob/main/resources/odh1.png)
 
-![](https://github.com/ably77/opendatahub-gitops/blob/master/resources/odh2.png)
+![](https://github.com/ably77/opendatahub-gitops/blob/main/resources/odh2.png)
 
 ### For the kubeflow dashboard
 Since kubeflow runs on istio service mesh, In the UI using the `istio-system` project, navigate to Networking --> Routes and select the Istio ingress-gateway route URL
 
-![](https://github.com/ably77/opendatahub-gitops/blob/master/resources/kf1.png)
+![](https://github.com/ably77/opendatahub-gitops/blob/main/resources/kf1.png)
 
-![](https://github.com/ably77/opendatahub-gitops/blob/master/resources/kf2.png)
+![](https://github.com/ably77/opendatahub-gitops/blob/main/resources/kf2.png)
 
 
