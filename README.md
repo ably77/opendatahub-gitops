@@ -27,7 +27,7 @@ This script will bootstrap ArgoCD and deploy Open Data Hub as an ArgoCD Applicat
 The ArgoCD Application points to a kustomize repo libary of apps that can be found here:
 (https://github.com/ably77/openshift-testbed-apps)
 
-For now you can just leverage the default configurations set in this repo, but in the future you may look into forking this app library and repo so that you can assume full control using Git
+For now you can just leverage the default configurations set in this demo, but in the future you may look into forking this app library and repo so that you can assume full control using Git
 
 ## Navigating to Dashboards
 
