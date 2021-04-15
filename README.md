@@ -1,8 +1,8 @@
 # Open Data Hub on OpenShift Demo w/ GitOps using ArgoCD
 
 This repo will do the following:
-- Deploy the latest Open Data Hub Community Operator
 - Boostrap ArgoCD for gitops workflow
+- Deploy the latest Open Data Hub Community Operator
 - Deploy the Open Data Hub Instances in namespace `odh`
 - Deploy standard kubeflow Instance in namespace `kubeflow`
 
